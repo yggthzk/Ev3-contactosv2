@@ -415,7 +415,7 @@
                     },
                     body: JSON.stringify({ nombre, telefono, email, direccion })
                 });
-
+//da error al agregar contactooo
                 if(res.ok) {
                     cerrarModal();
                     cargarContactos();
@@ -429,7 +429,7 @@
         }
 
         async function eliminar(id) {
-            if(!confirm('¿Estas seguro de eliminar permanentemente este contacto?')) return;
+            if(!confirm('¿Estas seguro de eliminar permanentemente este contacto chavall?')) return;
             try {
                 const res = await fetch(`${API_URL}/contactos/${id}/`, {
                     method: 'DELETE',

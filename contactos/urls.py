@@ -6,6 +6,6 @@ router = DefaultRouter()
 router.register(r'contactos', ContactoViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('', include(router.urls)),#register
     path('register/', RegisterView.as_view(), name='auth_register'),
 ]

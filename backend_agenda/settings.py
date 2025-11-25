@@ -20,12 +20,12 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'corsheaders',
     'contactos',
-    'frontend',
+    'frontend',#apps mias
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',#whitee
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -40,7 +40,7 @@ ROOT_URLCONF = 'backend_agenda.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'frontend/templates'],
+        'DIRS': [BASE_DIR / 'frontend/templates'],#template frontend
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -102,7 +102,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5500",
     "http://127.0.0.1:8000",
     "http://localhost:8000",
-    "https://agendacontactosev3.onrender.com"
+    "https://agendacontactosev3.onrender.com" 
+    #accesos
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True

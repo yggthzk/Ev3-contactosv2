@@ -4,7 +4,7 @@ from .models import Contacto
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
+        model = User#serializador para el modelo iuser
         fields = ['username', 'password', 'email']
         extra_kwargs = {'password': {'write_only': True}}
 
@@ -15,4 +15,4 @@ class UserSerializer(serializers.ModelSerializer):
 class ContactoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contacto
-        fields = '__all__'
+        fields = '__all__'#todos noma

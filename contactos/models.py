@@ -1,7 +1,7 @@
 from django.db import models
 
 class Contacto(models.Model):
-    nombre = models.CharField(max_length=100)
+    nombre = models.CharField(max_length=100)#campos del formulario de creacion de lo contato
     telefono = models.CharField(max_length=20)
     email = models.EmailField(blank=True, null=True)
     direccion = models.TextField(blank=True, null=True)

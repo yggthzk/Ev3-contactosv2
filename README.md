@@ -7,3 +7,8 @@ CREDENCIALES DE DJANGO ADMIN PANEL:
 Administrador
 
 Artotska157
+
+https://agendacontactosev3.onrender.com/
+https://agendacontactosev3.onrender.com/admin
+Modo invitado arreglao.
+
