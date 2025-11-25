@@ -17,7 +17,8 @@ https://github.com/yggthzk/Ev3-contactosv2.git
 
 
 El proyecto de Agenda de Contactos Sirve para Compartir contactos de manera publica gestionando permisos a usuarios autenticandolos con tokens jwt  convertidos de archivos json.
-los invitados puede acceder a una vista limitada de los contactos agendados con las preferencias del admin
+los invitados pueden acceder sin autenticacion por token a una vista limitada de los contactos agendados con las preferencias del admin
 
 los clientes consumen los recursos de la api al acceder  a una vista limitada de los contactos agendados.
+
 

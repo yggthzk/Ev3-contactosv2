@@ -269,14 +269,14 @@
 
         function entrarInvitado() {
             modoInvitado = true;
-            token = null;
+            token = null;//los invitados no necesitan tokens pero reciben una vista limitada de los contactos
             mostrarApp();
         }
 
         function logout() {
             token = null;
             modoInvitado = false;
-            localStorage.removeItem('jwt_token');
+            localStorage.removeItem('jwt_token')//autenticacion jwt al cerrar sesion
             document.getElementById('vista-app').classList.add('oculto');
             document.getElementById('vista-login').classList.remove('oculto');
             document.getElementById('username').value = '';
