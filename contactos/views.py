@@ -14,3 +14,8 @@ class ContactoViewSet(viewsets.ModelViewSet):
     queryset = Contacto.objects.all().order_by('-fecha_creacion')
     serializer_class = ContactoSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
+
+    # imss
+
+def index_view(request):
+    return render(request, 'index.html')
