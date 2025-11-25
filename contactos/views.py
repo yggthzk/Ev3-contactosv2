@@ -15,7 +15,5 @@ class ContactoViewSet(viewsets.ModelViewSet):
     serializer_class = ContactoSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
 
-    # imss
-
 def index_view(request):
     return render(request, 'index.html')

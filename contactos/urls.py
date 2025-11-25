@@ -2,7 +2,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import ContactoViewSet, RegisterView
 
-router = DefaultRouter()#la default 8000
+router = DefaultRouter()
 router.register(r'contactos', ContactoViewSet)
 
 urlpatterns = [
